@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Coding with Pierce</title>
+    <script src="files/libs/jquery.js"></script>
+    <script src="files/libs/jquery-ui.min.js"></script>
+    <script src="files/libs/descrambler.min.js"></script>
+    <script src="files/libs/index.js"></script>
+    <link rel="stylesheet" href="files/libs/jquery-ui.min.css">
+    <link href="files/libs/bootstrap.min.css" rel="stylesheet">     
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+    <body>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12 ban-a order-1 order-md-1" id="ban-a">
+<!-- Nav Snippet -->
+<nav class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Coding with Pierce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+<!-- Begin Dropdown Within Main Navbar -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Languages <span class="badge bg-secondary">4</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+      <li><a class="dropdown-item" href="list.html">Full List</a></li>
+     <li>
+          <hr class="dropdown-divider">
+     </li>
+      <li><a class="dropdown-item" href="lang-01.html">HTML & CSS</a></li>
+      <li><a class="dropdown-item" href="lang-02.html">JavaScript <span class="badge bg-secondary">New!</span></a></li>
+      <li><a class="dropdown-item" href="lang-03.html">Java <span class="badge bg-secondary">New!</span></a></li>
+      <li><a class="dropdown-item" href="lang-04.html">Python <span class="badge bg-secondary">New!</span></a></li>
+    </ul>
+  </li>
+<!-- End Dropdown Within Main Navbar -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar Snippet -->
+          <br>
+          <br>
+          <br>
+          <br>
+          <figure>
+            <a href="index.html">
+              <picture>
+              <img src="files/images/pierceconwi-com_logo.png" class="logo" alt="Logo for this project site" id="mainlogo">
+            </picture></a>
+          </figure>
+          <br>
+        </div>
+
+        <main class="col-12 col-md-6 order-2 order-md-3" id="con-a">
+            <h1 class="pmc-demo">JavaScript</h1>
+            <figure>
+              <picture>
+                <source class="langlogo" media="(min-width:1200px)" srcset="files/images/javascript_l.png">
+                <img class="langlogo" src="files/images/javascript_m.png" alt="JavaScript logo">
+              </picture>
+              <figcaption>An unofficial JavaScript logo (by <a href="https://github.com/voodootikigod">Chris Williams</a>, from <a href="https://github.com/voodootikigod/logo.js">GitHub logo.js</a>, under WTFPL).</figcaption>
+            </figure>
+            <p>JavaScript is often the next language aspiring web developers learn <span class="pmc-hl">after HTML & CSS.</span> JavaScript, also known as <span class="pmc-hl">ECMAScript,</span> is named after the programming language Java despite the fact that they bear little resemblance to one another. If HTML and CSS are the nouns and adjectives of a website, respectively, then JavaScript fills the role of verbs by allowing for <span class="pmc-hl">dynamic content and functionality.</span></p>
+            <p>JavaScript's applications are <span class="pmc-hl">not limited to web development,</span> and thus taking the time to master the language will grant you <span class="pmc-hl">significant versatility</span> within the realm of computer science as a whole.</p>
+        </main>
+
+        <aside class="col-6 col-md-3 order-3 order-md-2" id="con-b">
+          <h2>More Info</h2>
+          <!-- Quick Info Chart -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Language:</th>
+                <td>JavaScript</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Level of Difficulty:</th>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <th scope="row">Tools Required:</th>
+                <td>Word processor, internet browser</td>
+              </tr>
+              <tr>
+                <th scope="row">Demand:</th>
+                <td>High ($107,529/year - ZipRecruiter)</td>
+              </tr>
+              <tr>
+                <th scope="row">Applications:</th>
+                <td>Front end web development, mobile app development, software development</td>
+              </tr>  
+            </tbody>
+          </table>
+          <!-- End Quick Info Chart -->
+        </aside>
+
+        <aside class="col-6 col-md-3 order-4 order-md-4" id="con-c">
+          <h2>Contact Me</h2>
+          <div class="container">
+            <form action="https://formspree.io/f/xayaqavz" method="POST">
+              <div class="form-group">
+                <label for="customer">Name</label>
+                <input type="text" class="form-control" id="customer" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <label for="msg">Message</label>
+                <textarea class="form-control" id="msg" rows="5" placeholder="Type here..." required></textarea>
+              </div>
+              <button type="submit" class="btn">Submit</button><input type="reset" class="btn">
+            </form>
+            </div>
+            <br>
+        <h2>Links</h2>
+          <p>My <a href="https://www.linkedin.com/in/pconwi/" target="_blank">LinkedIn</a>.</p>
+        <br>
+        </aside>
+
+        <div class="col-12 order-5" id="foo-a">
+          <details>
+            <summary>
+            Copyright (c) 2021 Pierce Conwi.
+            </summary>
+            <br>
+            <p>All Rights Reserved.</p>
+            <p id="madewith">Made with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+            <hr>
+            <p>The homepage photo is courtesy of <a href="https://unsplash.com/@goshua13" target="_blank">Joshua Aragon</a> via <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</p>
+            <p>The HTML 5 logo featured here is provided by <a href="https://www.w3.org/html/logo/" target="_blank">W3.org</a>.</p>
+            <p>The JavaScript logo featured here was created by <a href="https://github.com/voodootikigod" target="_blank">Chris Williams</a> and is licensed under WTFPL.</p>
+            <p>The Java logo featured here is a registered trademark of <a href="https://www.oracle.com/index.html" target="_blank">Oracle</a> and/or its affiliates.</p>
+            <p>"Python" is a registered trademark of the <a href="https://www.python.org/psf/" target="_blank">Python Software Foundation</a>. The Python logo is a use trademark of the PSF as well.</p>
+        </details>
+        </div>
+
+    </div>
+</div>
+<script src="files/libs/popper.min.js"></script>
+<script src="files/libs/bootstrap.min.js"></script>
+<script src="script.js"></script>
+    </body>
+</html>
